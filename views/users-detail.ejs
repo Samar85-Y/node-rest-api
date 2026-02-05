@@ -1,62 +1,42 @@
 <!DOCTYPE html>
 <html lang="de">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>
-    <%= title %>
-  </title>
+  <title><%= title %></title>
+  <link rel="icon" href="/favicon.ico">
   <style>
-    table {
-      border-collapse: collapse;
-    }
-
-    th,
-    td {
+    table {border-collapse: collapse;}
+    th, td {
       text-align: left;
-      border: 1px solid darkblue;
+      border: 1px solid darkgray;
     }
   </style>
 </head>
-
 <body>
-  <h1>
-    <%= heading %>
-  </h1>
+  <h1><%= heading %></h1>
 
   <table>
     <tr>
       <th>ID</th>
-      <td>
-        <%= user[0].users_id %>
-      </td>
+      <td><%= user[0].users_id %></td>
     </tr>
     <tr>
       <th>Benutzername</th>
-      <td>
-        <%= user[0].users_name %>
-      </td>
+      <td><%= user[0].users_name %></td>
     </tr>
     <tr>
       <th>Passwort</th>
-      <td>
-        <%= user[0].users_password %>
-      </td>
+      <td><%= user[0].users_password %></td>
     </tr>
     <tr>
       <th>angelegt am</th>
-      <td>
-        <%= user[0].users_registered %>
-      </td>
+      <td><%= user[0].users_registered %></td>
     </tr>
     <tr>
-      <th>Letzter Login</th>
-      <td>
-        <%= user[0].users_last_login %>
-      </td>
+      <th>letzter Login</th>
+      <td><%= user[0].users_last_login %></td>
     </tr>
   </table>
 </body>
-
 </html>
